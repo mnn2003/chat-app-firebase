@@ -1,0 +1,201 @@
+.auth-container, .user-list-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container {
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0%);
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.chat-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.chat-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chat-window {
+    margin-top: 15px;
+    height: calc(100vh - 110px); 
+    overflow-y: auto;
+    padding: 15px 10px;
+    background-color: #fafafa;
+}
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.chat-footer .input-group {
+    align-items: center;
+    width: 100%;
+}
+
+.chat-footer textarea {
+    border-radius: 25px;
+    width: 80%;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    resize: none;
+    line-height: 1.4;
+}
+
+.btn-attach {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 5px;
+}
+
+#send-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bg-primary {
+    background-color: rgb(211 211 211 / 72%) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px;
+    float: right;
+    clear: both;
+    max-width: 80%;
+    word-wrap: break-word;
+    padding: 10px 15px; 
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 0px;
+    float: left;
+    clear: both;
+    max-width: 80%;
+    word-wrap: break-word;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.rtime, .stime {
+    float: right;
+	padding: 0 0 0 7px;
+	position: relative;
+	bottom: -8px;
+	color: rgb(0 0 0);
+	font-size: 9px;
+	display: inline-block;
+}
+
+.tick {
+    font-size: 12px;
+    padding-left: 5px;
+    color: #007bff;
+}
+
+#chat-window::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-window::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .auth-container, .user-list-container, .chat-container {
+        max-width: 500px;
+    }
+
+    .chat-footer textarea {
+        border-radius: 25px;
+    }
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.divider-text {
+    font-size: 12px;
+    color: #999;
+    padding: 0 10px;
+}
+
+#top-date-display {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 0px 10px;
+    background-color: #abd7e9;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    border-radius: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
